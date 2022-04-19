@@ -1,23 +1,24 @@
-#include "main.h"
-
+#include "holberton.h"
 /**
- * more_numbers - nmbr fct
- *
- * Return: no return
+ * more_numbers - prints the range 0-14 ten times.
+ * Return: nothing.
  */
-
 void more_numbers(void)
 {
+  int i, j;
 
-int i, j;
-	for (i = 1; i <= 10; i++)
+  i = j = 0;
+  while (i < 10)
+    {
+      while (j <= 14)
 	{
-		for (j = 0; j < 15; j++)
-		{
-			if (j >= 10)
-			_putchar('1');
-			_putchar(j % 10 + '0');
-		}
-			_putchar('\n');
-		}
+	  if (j >= 10)
+	    _putchar(j / 10 + '0');
+	  _putchar(j % 10 + '0');
+	  ++j;
+	}
+      _putchar('\n');
+      j = 0;
+      i++;
+    }
 }
