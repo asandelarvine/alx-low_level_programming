@@ -1,28 +1,15 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- * more_numbers - prints the range 0-14 ten times.
- * Return: nothing.
+ * more_numbers - entry point
+ *
+ * Description: Prints the numbers with _putchar
+ *
+ * Return: void
  */
+
 void more_numbers(void)
 {
-<<<<<<< HEAD
-  int i, j;
-
-  i = j = 0;
-  while (i < 10)
-    {
-      while (j <= 14)
-	{
-	  if (j >= 10)
-	    _putchar(j / 10 + '0');
-	  _putchar(j % 10 + '0');
-	  ++j;
-	}
-      _putchar('\n');
-      j = 0;
-      i++;
-    }
-=======
 	int number, tens, units, row;
 
 	for (row = 1; row <= 10; row++)
@@ -38,5 +25,4 @@ void more_numbers(void)
 		}
 		_putchar('\n');
 	}
->>>>>>> 5cef6008c6e5d0d931e686e29a257688d243c586
 }
