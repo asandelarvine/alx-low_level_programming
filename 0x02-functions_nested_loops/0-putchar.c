@@ -1,19 +1,23 @@
 #include "main.h"
+
 /**
- * main - Prints _putchar as a message.
+ * main - prints _putchar
  *
- * Return: Always 0 (Success)
+ * Description: prints _putchar
+ *
+ * Return: 0 (Success)
  */
+
 int main(void)
 {
-	int str[] = {72, 111, 108, 98, 101, 114, 116, 111, 110};
-	int count, sz;
+	char text[9] = "_putchar";
+	int i = 0;
 
-	sz = sizeof(str) / sizeof(int);
-	for (count = 0; count < sz; count++)
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(str[count]);
+		_putchar(text[i]);
 	}
 	_putchar('\n');
+
 	return (0);
 }
