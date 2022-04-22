@@ -1,32 +1,26 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_to_98 - prints numbers to 98
- * @n: starting integer
- *
- * Description: prints all natural number from n - 98
+ * print_alphabet_x10 - print alphabet 10 times
  *
  * Return: void
  */
 
-void print_to_98(int n)
+void print_alphabet_x10(void)
 {
-	if (n < 98)
+	int round = 0;
+	char letter = 'a';
+
+	while (round < 10)
 	{
-		while (n < 98)
+		letter = 'a';
+		while (letter <= 'z')
 		{
-			printf("%d, ", n);
-			n++;
+			_putchar(letter);
+			letter++;
 		}
+		_putchar('\n');
+
+		round++;
 	}
-	else if (n > 98)
-	{
-		while (n > 98)
-		{
-			printf("%d, ", n);
-			n--;
-		}
-	}
-	printf("98\n");
 }
