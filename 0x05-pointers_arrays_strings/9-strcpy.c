@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
  *_strcpy - This is main function for copying the files
  *@dest: this is where to copy the string
