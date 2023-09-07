@@ -3,7 +3,7 @@
 
 /*
  * File: main.h
- * Auth: Larvine
+ * Auth: Larvine Asande
  * Desc: Header file containing the prototypes of all functions
  *       included in the static library libmain.a.
  */
